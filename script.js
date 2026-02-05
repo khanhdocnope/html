@@ -8,31 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const posX = e.clientX;
         const posY = e.clientY;
 
-        // Sử dụng dấu huyền ` (phím dưới nút Esc) để bao quanh ${}
-        dot.style.left = `${posX}px`;
-        dot.style.top = `${posY}px`;
+        // Hiện cursor khi bắt đầu di chuyển
+        dot.style.opacity = "1";
+        outline.style.opacity = "1";
 
+        // Dot: Dịch chuyển tức thì theo tâm chuột
+        dot.style.transform = `translate(${posX - 4}px, ${posY - 4}px)`;
+
+        // Outline: Di chuyển mượt mà (trễ hơn 1 chút)
         outline.animate({
-            left: `${posX}px`,
-            top: `${posY}px`
-        }, { 
-            duration: 500, 
-            fill: "forwards",
-            easing: "ease-out" 
-        });
+            transform: `translate(${posX - 20}px, ${posY - 20}px)`
+        }, { duration: 500, fill: "forwards" });
     });
-
-    const links = document.querySelectorAll('a, .bento-box');
-    links.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-            outline.style.borderColor = 'rgba(0, 242, 254, 1)';
-        });
-        link.addEventListener('mouseleave', () => {
-            outline.style.transform = 'translate(-50%, -50%) scale(1)';
-            outline.style.borderColor = 'rgba(0, 242, 254, 0.5)';
-        });
-    });
-
-    console.log("⚡ Bento Portfolio: Cursor engine started!");
 });
