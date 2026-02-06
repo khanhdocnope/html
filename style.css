@@ -7,18 +7,27 @@
 }
 
 body {
-    background-color: #050505;
+    /* Thay 'link-anh-cua-ban.jpg' bằng đường dẫn ảnh thực tế hoặc URL */
+    background-image: url('./data/anh-nen.png'); 
+    background-size: cover;        /* Ảnh phủ kín toàn bộ màn hình */
+    background-position: center;   /* Giữ ảnh luôn ở giữa */
+    background-attachment: fixed;  /* Giữ ảnh cố định khi cuộn trang (tạo hiệu ứng Parallax) */
+    background-repeat: no-repeat;
     color: #ffffff;
-    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
 }
 
-/* 1. Sửa lỗi Text Gradient */
-.text-gradient {
-    background: linear-gradient(to right, #00f2fe, #4facfe);
-    -webkit-background-clip: text; /* Cho Chrome, Safari, Edge */
-    background-clip: text;         /* Thuộc tính tiêu chuẩn */
-    -webkit-text-fill-color: transparent;
-    color: transparent;            /* Dự phòng nếu fill-color không chạy */
+/* Thêm một lớp phủ tối để các ô Bento và chữ dễ đọc hơn */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Độ tối 60%, bạn có thể tăng giảm tùy ý */
+    z-index: -1; /* Nằm dưới nội dung nhưng trên ảnh nền */
 }
 
 /* 2. Hiệu ứng Glassmorphism mượt mà */
