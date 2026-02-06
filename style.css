@@ -1,71 +1,66 @@
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  
-    background-image: url('./data/anh-nen.png'); 
-    background-size: cover;       
-    background-position: center; 
-    background-attachment: fixed; 
-    background-repeat: no-repeat;
-    color: #ffffff;
-    min-height: 100vh;
-    position: relative;
+  background-image: url("./data/anh-nen.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  min-height: 100vh;
+  position: relative;
 }
-
 
 body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); 
-    z-index: -1;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
-
 .bento-box {
-    border-radius: 1.5rem;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .bento-box:hover {
-    background-color: rgba(255, 255, 255, 0.06);
-    border-color: rgba(0, 242, 254, 0.4);
-    transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(0, 242, 254, 0.4);
+  transform: translateY(-5px);
 }
 
-
-#cursor-dot, #cursor-outline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 9999;
-    border-radius: 50%;
-    opacity: 0;
+#cursor-dot,
+#cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  opacity: 0;
 }
 
 #cursor-dot {
-    width: 0px;
-    height: opx;
-    background-color: #00f2fe;
+  width: 0px;
+  height: opx;
+  background-color: #00f2fe;
 }
 
 #cursor-outline {
-    width: 40px;
-    height: 40px;
-    border: 2px solid rgba(0, 242, 254, 0.5);
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(0, 242, 254, 0.5);
 }
