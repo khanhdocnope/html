@@ -7,13 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('mousemove', (e) => {
         const posX = e.clientX;
         const posY = e.clientY;
-
         // Hiện cursor khi bắt đầu di chuyển
         dot.style.opacity = "1";
         outline.style.opacity = "1";
 
-        // Dot: Dịch chuyển tức thì theo tâm chuột
-        dot.style.transform = `translate(${posX - 4}px, ${posY - 4}px)`;
+
 
         // Outline: Di chuyển mượt mà (trễ hơn 1 chút)
         outline.animate({
