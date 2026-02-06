@@ -1,11 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bản thân</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <div class="box">
+        <h1>khánh</h1>
+        <h2>mục tiêu trong năm nay</h2>
+        <ol type="1">
+          <li>nắm vững html ,css,js,c++,pygame</li>
+          <li>đạt học sinh giỏi</li>
+          <li>thật vui vẻ</li>
+        </ol>
+        <img src="./data/anh-demo.jpg" alt="anh-demo" />
+        <p>phải<em> không </em>được trái với lương tâm!!</p>
+        <h2>thời khoá biểu</h2>
+        <table border="1">
+          <tr>
+            <th>số thứ tự</th>
+            <th>môn học</th>
+            <th>Thời gian</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>văn</td>
+            <td>30p</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>toán</td>
+            <td>45p</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>anh</td>
+            <td>30p</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>lập trình</td>
+            <td>30p</td>
+          </tr>
+        </table>
+        <a href="https://www.facebook.com/nguyen.khanh.240534/"
+          >truy cập facebook me</a
+        >
+        <br />
+        <br />
+        <hr />
+        <form action="/submit-data" method="post">
+          <label for="ten">Nhập tên của bạn:</label>
+          <input type="text" id="ten" name="user_name" />
     
-</body>
+          <label for="loi_nhan">Bạn muốn để lại điều gì?</label>
+          <textarea id="loi_nhan" name="user_message"></textarea>
+          <button type="submit">gửi</button>
+        </form>
+    </div>
+  </body>
 </html>
