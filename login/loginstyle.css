@@ -1,0 +1,140 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/* Reset định dạng mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ảnh nền phong cách vũ trụ/công nghệ */
+    background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920&auto=format&fit=crop') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Khung đăng nhập kính mờ */
+.login-card {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h2 {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.login-header p {
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+/* Hiệu ứng Input Floating Label (Nhãn bay) */
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 5px;
+}
+
+/* Khi có dữ liệu hoặc đang focus, nhãn sẽ bay lên */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin: -15px 0 20px;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Nút bấm chuyển màu mượt mà */
+.btn-login {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+    transition: 0.4s;
+}
+
+.btn-login:hover {
+    background: #00d2ff;
+    color: #fff;
+    box-shadow: 0 0 20px #00d2ff;
+}
+
+.register-link {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.register-link a {
+    color: #00d2ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
