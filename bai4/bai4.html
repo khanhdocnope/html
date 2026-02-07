@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFO Express - Du lịch vũ trụ</title>
+    <link rel="stylesheet" href="bai4.css">
+</head>
+<body>
+    <!-- PHẦN ĐẦU (HEADER) -->
+    <header>
+        <h1>🛸 UFO EXPRESS</h1>
+        <p>Hành trình vũ trụ của bạn bắt đầu từ đây!</p>
+    </header>
+
+    <!-- PHẦN GIỚI THIỆU (HERO SECTION) -->
+    <section class="hero">
+        <img src="../data/tau-khong-gian.png" alt="Đĩa bay UFO trong không gian">
+        <strong>🚀 Khám phá vũ trụ với công nghệ tương lai!</strong>
+        <em>"Hôm nay chúng ta bay, ngày mai chúng ta chinh phục các vì sao!"</em>
+    </section>
+
+    <!-- PHẦN BẢNG SO SÁNH (TABLE) -->
+    <section class="table-section">
+        <h2>📊 So sánh các dòng đĩa bay</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tên Dòng Máy</th>
+                    <th>Tốc độ Tối Đa (km/h)</th>
+                    <th>Giá (triệu USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>UFO Lite X1</td>
+                    <td>50,000</td>
+                    <td>2.5</td>
+                </tr>
+                <tr>
+                    <td>UFO Pro X5</td>
+                    <td>150,000</td>
+                    <td>7.8</td>
+                </tr>
+                <tr>
+                    <td>UFO Elite X10</td>
+                    <td>300,000</td>
+                    <td>15.0</td>
+                </tr>
+                <tr>
+                    <td>UFO Quantum X99</td>
+                    <td>500,000</td>
+                    <td>50.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- PHẦN FORM ĐĂNG KÝ (FORM) -->
+    <section class="form-section">
+        <h2>✈️ Đăng ký lái thử UFO</h2>
+        <form action="#" method="POST">
+            <!-- Ô nhập tên -->
+            <div class="form-group">
+                <label for="name">👤 Tên của bạn:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Nhập tên đầy đủ" 
+                    required
+                >
+            </div>
+
+            <!-- Ô chọn ngày nhận xe -->
+            <div class="form-group">
+                <label for="pickup-date">📅 Ngày nhận UFO:</label>
+                <input 
+                    type="date" 
+                    id="pickup-date" 
+                    name="pickup-date" 
+                    required
+                >
+            </div>
+
+            <!-- Ô chọn màu sắc đĩa bay -->
+            <div class="form-group">
+                <label for="ufo-color">🎨 Chọn màu sắc:</label>
+                <input 
+                    type="color" 
+                    id="ufo-color" 
+                    name="ufo-color" 
+                    value="#00ff99"
+                >
+            </div>
+
+            <!-- Nút gửi -->
+            <button type="submit">🚀 Gửi Đơn Đăng Ký</button>
+        </form>
+    </section>
+
+    <!-- PHẦN CHÂN (FOOTER) -->
+    <footer>
+        <p>&copy; 2026 UFO Express. Tất cả quyền được bảo lưu. 🌌</p>
+        <p>Liên hệ: contact@ufoexpress.space | Hotline: 1-800-UFO-TRIP</p>
+    </footer>
+</body>
+</html>
