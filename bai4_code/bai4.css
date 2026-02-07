@@ -1,0 +1,51 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: url(../data/tau-khong-gian.png);
+  width: 100%;
+  background-position: center;
+  color: aliceblue;
+}
+
+header {
+  display: flex;
+  color: cornsilk;
+  background-image:url(../data/anh-nen.png);
+}
+.full-width-img {
+  width: 100%; /* Trải đều theo chiều ngang */
+  height: auto; /* Hoặc auto để giữ tỉ lệ */
+  object-fit: cover; /* Quan trọng: Giúp ảnh không bị méo khi co giãn */
+  display: block;
+
+}
+table {
+  width: 90%;
+  margin: 20px auto; /* Căn giữa bảng */
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.6); /* Làm nền bảng hơi trong suốt */
+  color: #00f2ff; /* Màu xanh neon cho giống màn hình radar */
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #00f2ff;
+}
+form {
+  max-width: 400px;
+  margin-left: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background: #222;
+  color: white;
+  border: 1px solid #444;
+}

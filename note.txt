@@ -1,37 +1,37 @@
+🏁 Đề bài: Tạo một "Trang Đích (Landing Page) cho Đĩa Bay UFO"
+Hãy tưởng tượng bạn đang bán một chiếc đĩa bay hoặc quảng bá 
+cho một chuyến du lịch lên Sao Hỏa. Bài tập này sẽ giúp bạn 
+làm quen với bố cục (layout) và các thẻ nhập liệu (input).
 
-📰 Đề bài: "The Tech Journal" – Blog Công Nghệ
-Hãy tạo một trang web mới (ví dụ: blog.html và blog.css) với các yêu cầu sau:
+📝 Các yêu cầu bạn cần thực hiện:
+Phần Đầu (Header):
 
-1. Cấu trúc HTML (Sử dụng các thẻ Semantic)
-Thay vì chỉ dùng <div>, hãy thử dùng các thẻ "có nghĩa" để trình duyệt và Google hiểu web bạn tốt hơn:
+-Sử dụng thẻ header.
 
-<header>: Chứa logo (tên blog) và một câu slogan nhỏ.
+-Tên thương hiệu (ví dụ: "UFO Express") đặt trong thẻ h1.
 
-<nav>: Thanh menu điều hướng (Trang chủ, Tin mới, Review, Liên hệ).
+Phần Giới thiệu (Hero Section):
 
-<main>: Khu vực chứa nội dung chính. Trong này có:
+-Một bức ảnh về không gian hoặc đĩa bay (Sử dụng thẻ img).
 
-<article>: Một bài viết chi tiết (bao gồm: tiêu đề <h2>, ảnh đại diện bài viết, một đoạn văn nội dung ngắn).
- bên cạnh (Sidebar) dùng để chứa "Các bài viết xem nhiều nhất" hoặc "Quảng cáo".
+-Một câu slogan kêu gọi cực "ngầu" đặt trong thẻ strong hoặc em.
 
-<footer>: Thông tin bản quyền.
+-Thông số kỹ thuật (Table):
 
-2. Thử thách CSS (Layout nâng cao)
-Đây là phần quan trọng nhất để web trông giống một tờ báo:
+-Tạo một bảng (table) so sánh các dòng đĩa bay.
 
-Chia cột (Flexbox): Hãy làm cho <main> và <aside> nằm cạnh nhau (main chiếm 70%, aside chiếm 30% chiều ngang).
+-Các cột: Tên dòng máy, Tốc độ tối đa, Giá (Sử dụng thead, tbody, tr, td).
 
-Định dạng văn bản:
+Form Đăng ký lái thử (Form):
 
-Sử dụng line-height để giãn dòng cho đoạn văn dễ đọc.
+-Đây là phần quan trọng nhất. Hãy tạo một thẻ form gồm:
 
-Dùng text-align: justify; để căn đều hai bên cho nội dung bài viết.
+-Ô nhập tên (input type="text").
 
-Bo góc ảnh: Làm cho tất cả ảnh trong bài viết có border-radius: 8px;.
+-Ô chọn ngày nhận xe (input type="date").
 
-Sticky Menu: Thử làm cho thanh <nav> luôn nằm ở trên cùng màn hình khi bạn cuộn trang xuống.
+-Ô chọn màu sắc đĩa bay (input type="color").
 
-3. Thử thách "Tính năng"
-Phần bình luận: Dưới mỗi bài viết, hãy tạo một khu vực gồm các <div> mô phỏng bình luận của người dùng (có tên người dùng in đậm và nội dung bình luận).
+-Một nút bấm gửi đi (button type="submit").
 
-Nút "Đọc thêm": Tạo một thẻ <a> trông giống như một nút bấm (có màu nền, không gạch chân) ở cuối mỗi bài viết ngắn.
+##💡 Gợi ý cấu trúc phân cấp (DOM Tree)
