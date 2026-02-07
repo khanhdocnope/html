@@ -1,0 +1,38 @@
+
+📰 Đề bài: "The Tech Journal" – Blog Công Nghệ
+Hãy tạo một trang web mới (ví dụ: blog.html và blog.css) với các yêu cầu sau:
+
+1. Cấu trúc HTML (Sử dụng các thẻ Semantic)
+Thay vì chỉ dùng <div>, hãy thử dùng các thẻ "có nghĩa" để trình duyệt và Google hiểu web bạn tốt hơn:
+
+<header>: Chứa logo (tên blog) và một câu slogan nhỏ.
+
+<nav>: Thanh menu điều hướng (Trang chủ, Tin mới, Review, Liên hệ).
+
+<main>: Khu vực chứa nội dung chính. Trong này có:
+
+<article>: Một bài viết chi tiết (bao gồm: tiêu đề <h2>, ảnh đại diện bài viết, một đoạn văn nội dung ngắn).
+
+<aside>: Cột bên cạnh (Sidebar) dùng để chứa "Các bài viết xem nhiều nhất" hoặc "Quảng cáo".
+
+<footer>: Thông tin bản quyền.
+
+2. Thử thách CSS (Layout nâng cao)
+Đây là phần quan trọng nhất để web trông giống một tờ báo:
+
+Chia cột (Flexbox): Hãy làm cho <main> và <aside> nằm cạnh nhau (main chiếm 70%, aside chiếm 30% chiều ngang).
+
+Định dạng văn bản:
+
+Sử dụng line-height để giãn dòng cho đoạn văn dễ đọc.
+
+Dùng text-align: justify; để căn đều hai bên cho nội dung bài viết.
+
+Bo góc ảnh: Làm cho tất cả ảnh trong bài viết có border-radius: 8px;.
+
+Sticky Menu: Thử làm cho thanh <nav> luôn nằm ở trên cùng màn hình khi bạn cuộn trang xuống.
+
+3. Thử thách "Tính năng"
+Phần bình luận: Dưới mỗi bài viết, hãy tạo một khu vực gồm các <div> mô phỏng bình luận của người dùng (có tên người dùng in đậm và nội dung bình luận).
+
+Nút "Đọc thêm": Tạo một thẻ <a> trông giống như một nút bấm (có màu nền, không gạch chân) ở cuối mỗi bài viết ngắn.
