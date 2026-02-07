@@ -144,3 +144,11 @@ footer {
 .logo{
     display: flex;
 }
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Chuyển thành một cột đứng khi màn hình nhỏ */
+    }
+    article, aside {
+        width: 100%;
+    }
+}
