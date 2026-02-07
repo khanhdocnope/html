@@ -1,0 +1,10 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: aquamarine;
+  color: rgb(32, 47, 59);
+  size: 100%;
+  height: 100%;
+}
+head {
+  background-attachment: fixed;
+}
