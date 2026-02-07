@@ -12,8 +12,7 @@ Thay vì chỉ dùng <div>, hãy thử dùng các thẻ "có nghĩa" để trìn
 <main>: Khu vực chứa nội dung chính. Trong này có:
 
 <article>: Một bài viết chi tiết (bao gồm: tiêu đề <h2>, ảnh đại diện bài viết, một đoạn văn nội dung ngắn).
-
-<aside>: Cột bên cạnh (Sidebar) dùng để chứa "Các bài viết xem nhiều nhất" hoặc "Quảng cáo".
+ bên cạnh (Sidebar) dùng để chứa "Các bài viết xem nhiều nhất" hoặc "Quảng cáo".
 
 <footer>: Thông tin bản quyền.
 
